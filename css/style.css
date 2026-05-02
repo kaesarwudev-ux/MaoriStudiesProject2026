@@ -1,0 +1,122 @@
+/* 
+ * diary styles
+ * made this myself so dont judge lol
+ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', serif;
+    background-color: #f5f1e8;
+    color: #2c2c2c;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    background-color: #fffcf5;
+    border: 1px solid #d4c9b8;
+    padding: 40px;
+    box-shadow: 3px 3px 0px rgba(0,0,0,0.1);
+}
+
+header {
+    text-align: center;
+    border-bottom: 2px dashed #c4b5a0;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 2em;
+    color: #4a4a4a;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    color: #888;
+    font-style: italic;
+    font-size: 0.9em;
+}
+
+.entry {
+    background-color: #fffef9;
+    border-left: 4px solid #8b7d6b;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.entry.featured {
+    border-left: 4px solid #c9a66b;
+    background-color: #fffdf5;
+}
+
+.entry-header {
+    margin-bottom: 15px;
+}
+
+.entry-header h2 {
+    font-size: 1.4em;
+    color: #3d3d3d;
+    margin-bottom: 3px;
+}
+
+.date {
+    display: block;
+    color: #999;
+    font-size: 0.85em;
+    font-style: italic;
+}
+
+.entry-content p {
+    margin-bottom: 12px;
+    text-align: justify;
+}
+
+.entry-content ul {
+    margin: 15px 0;
+    padding-left: 25px;
+}
+
+.entry-content li {
+    margin-bottom: 8px;
+}
+
+blockquote {
+    background-color: #f0ebe0;
+    border-left: 3px solid #c9a66b;
+    padding: 15px 20px;
+    margin: 20px 0;
+    font-style: italic;
+    color: #5a5a5a;
+}
+
+footer {
+    text-align: center;
+    border-top: 2px dashed #c4b5a0;
+    padding-top: 20px;
+    margin-top: 40px;
+    color: #999;
+    font-size: 0.8em;
+}
+
+/* mobile stuff */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+    
+    header h1 {
+        font-size: 1.6em;
+    }
+    
+    .entry {
+        padding: 15px;
+    }
+}
